@@ -1,0 +1,78 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1885998618" file="G:\My Drive\Articles\Article_Reconstruction\Manuscript\submission_Plos_Bio\Codes\GUI_Cube_Isolation\Stack to Cubes.prj" location="G:\My Drive\Articles\Article_Reconstruction\Manuscript\submission_Plos_Bio\Codes\GUI_Cube_Isolation" name="Stack to Cubes" target="target.mlapps" target-name="Package App">
+    <param.appname>Stack to Cubes</param.appname>
+    <param.authnamewatermark>Nadav Yayon</param.authnamewatermark>
+    <param.email />
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary>Tool to parse large 3D imaigng datasets to smaller "cubes" centered around a cell body or soma.</param.summary>
+    <param.description>This tool gets a set (or single) 3D image sequences. Detects  the somata and then generates smaller image "cubes" around each detected soma. It can also converts to the images to 8bit by min/max histogram stretching of intensity values (Dendrite Min/Max). 
+In additoin to image files the output includes soma statistics and cube information (Coordinates in original image and other somas in the cube)</param.description>
+    <param.screenshot>C:\Users\Nadav yayon\AppData\Local\Temp\tp93991515_0bcd_46d2_97ac_3738ff1ac938.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>c24a1088-f670-4f7c-9e53-63fdd3122d29</param.guid>
+    <unset>
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\Soma_to_Cube_App.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\Cube_Isolation-01.png</file>
+      <file>${PROJECT_ROOT}\SomaToCube_Master.m</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="G:\My Drive\Articles\Article_Reconstruction\Manuscript\submission_Plos_Bio\Codes" name="GUI_Cube_Isolation" optional="false">G:\My Drive\Articles\Article_Reconstruction\Manuscript\submission_Plos_Bio\Codes\GUI_Cube_Isolation</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2020a</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
