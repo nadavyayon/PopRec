@@ -6,3 +6,4 @@ This Pipeline is composed from 3 tools each with its own Matlab GUI for easy imp
 3) REconstruction validation 
 This app is used to review the reconstructed neurons in a randomised fashion and the experiemnter should rank each cell according to the reconstruction quality, This is can then be used to train a classifier to rank each cell and predict which reconstructions are good and which are not 
 
+In addition to this app you can also find other functions and notebooks used for analysis in this project and also Intensify3D+ which is build to handle normalization across biological samples 
